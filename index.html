@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Health Log</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #111418; color: #e6e8eb; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Thai", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 20px 60px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; color: #c9cdd2; }
+  p, li { color: #d3d6da; }
+  .sub { color: #9aa0a6; margin: 0 0 24px; }
+  a { color: #8ab4f8; }
+  .box { background: #1a1e24; border: 1px solid #2a2f37; border-radius: 10px; padding: 14px 18px; }
+  footer { margin-top: 40px; color: #8a9096; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Health Log</h1>
+  <p class="sub">A personal health summary tool, used only by its developer.</p>
+
+  <div class="box">
+    <p>Health Log reads the developer's own sleep, activity and heart data from Google Health with read-only access,
+    writes a daily summary into the developer's own Google Sheet, and sends a short morning note to the developer's own Telegram chat.</p>
+    <p>It is not offered to the public and has no sign-up. Only one Google account uses it.</p>
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Summarises last night's sleep, resting heart rate, heart rate variability, steps and active minutes.</li>
+    <li>Compares each day with the developer's own recent normal and suggests how hard to train that day.</li>
+    <li>Keeps weekly goals for sleep, steps, active minutes and strength training.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>Read how the app accesses, uses and stores Google user data in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <h2>ภาษาไทย</h2>
+  <p>Health Log เป็นเครื่องมือส่วนตัวของผู้พัฒนาเท่านั้น อ่านข้อมูลการนอน การเคลื่อนไหว และหัวใจของผู้พัฒนาเองจาก Google Health แบบอ่านอย่างเดียว
+  สรุปลง Google Sheet ของผู้พัฒนาเอง และส่งสรุปตอนเช้าเข้าแชต Telegram ของผู้พัฒนาเอง ไม่เปิดให้บุคคลอื่นใช้
+  · <a href="privacy.html">นโยบายความเป็นส่วนตัว</a></p>
+
+  <footer>Developer: <a href="https://github.com/panuwatmonpetch-droid">github.com/panuwatmonpetch-droid</a></footer>
+</main>
+</body>
+</html>
